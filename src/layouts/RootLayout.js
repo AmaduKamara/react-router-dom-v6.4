@@ -1,18 +1,10 @@
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import Header from "../components/Header";
 
 export default function RootLayout() {
   return (
     <div className="root-layout">
-      <header>
-        <nav>
-          <h1>
-            <Link to="/">King Router</Link>
-          </h1>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/help">Help</NavLink>
-        </nav>
-      </header>
+      <Header />
       <main>
         <Outlet />
       </main>
